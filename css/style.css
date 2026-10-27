@@ -954,6 +954,54 @@ tbody tr:hover { background: rgba(56,189,248,0.04); }
 
 .tag.lead { background: rgba(56,189,248,0.14); color: var(--cyan-300); }
 
+/* -------------------- Schedule -------------------- */
+
+.schedule-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.schedule { min-width: 0; }   /* override the global 560px min-width */
+
+.schedule .time {
+  width: 150px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--cyan-400);
+}
+
+.schedule td strong { color: var(--text); font-weight: 600; }
+
+.schedule .session-detail {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Keynote rows: soft amber wash with an accent bar */
+.schedule tr.highlight {
+  background: linear-gradient(90deg, rgba(245,158,11,0.10), rgba(245,158,11,0) 70%);
+}
+.schedule tr.highlight td:first-child { box-shadow: inset 3px 0 0 var(--amber-400); }
+
+/* Coffee break: de-emphasised */
+.schedule tr.break td { color: var(--text-dim); font-style: italic; }
+.schedule tr.break .time { color: var(--text-dim); }
+
+/* Space between the two keynote cards */
+.keynote + .keynote { margin-top: 2rem; }
+
+@media (max-width: 560px) {
+  .schedule .time { width: auto; }
+  .schedule th, .schedule td { padding: 0.8rem 0.9rem; }
+}
+
 /* -------------------- Keynote -------------------- */
 
 .keynote {
