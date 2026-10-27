@@ -110,15 +110,135 @@
         </div>
 
       </article>
+
+            <article class="keynote">
+
+        <aside class="keynote-speaker">
+          <img class="keynote-photo" src="assets/img/flavio_giorgi.png"
+               alt="Flavio Giorgi" loading="lazy" width="340" height="340">
+          <div class="name">Flavio Giorgi</div>
+          <div class="tag">Invited Speaker</div>
+          <div class="role">Postdoctoral Researcher, Sapienza University of Rome<br>Co-Founder, CEO &amp; CTO, TellmewAI</div>
+        </aside>
+
+        <div class="keynote-body">
+          <h3 class="keynote-title">
+            Faithful Is Not Enough: XAI Narratives from the Lab to Real-World Deployment
+          </h3>
+
+          <h4 class="keynote-label">Abstract</h4>
+
+          <p>Large Language Models (LLMs) can transform the technical artifacts produced by XAI
+          methods, such as feature attributions and counterfactual explanations, into natural-language
+          narratives that people can actually read. However, the fluency of a narrative does not
+          guarantee its faithfulness to the underlying model. A convincing explanation may cite
+          features the model never relied on, omit the ones it did, or even contradict the very
+          artifact it is supposed to describe, and the reader has little chance of noticing. The
+          question, therefore, is not whether LLMs can explain, but under which conditions they can
+          act as reliable mediators between a model and the people affected by its decisions.</p>
+
+          <p>This talk argues that an LLM can play this role only when three conditions hold. First,
+          the narrative must be grounded in an explicit XAI artifact, rather than produced by directly
+          prompting the model for a post-hoc rationale. Second, it must be refined, so that
+          inconsistencies and errors across alternative drafts are identified and resolved. Third, it
+          must be verified against the original artifact before reaching the end-user. These
+          conditions are illustrated through a line of research that starts from natural-language
+          counterfactual explanations for graph neural networks, where LLMs verbalize counterfactual
+          artifacts instead of reasoning freely about a decision. It then continues with a
+          multi-narrative draft-and-refine pipeline, in which knowledge distillation enables small
+          language models to generate coherent counterfactual narratives, whose consistency with the
+          factual and counterfactual ground truth can be assessed automatically.</p>
+
+          <p>Moving from research to real-world deployment changes the nature of these conditions. At
+          TellmewAI, a Compliant-AI-as-a-Service platform, grounding, refinement, and verification are
+          no longer design choices but requirements stemming from the EU AI Act and from standards
+          such as ISO/IEC 42001 and ISO/IEC 42005. Grounding becomes traceability, as each statement
+          of a narrative must be linked to the artifact that supports it. Refinement becomes an
+          internal control over the generation process, and verification becomes evidence that can be
+          preserved and presented during an audit. Ultimately, the experience of TellmewAI shows that
+          organizations need explanations tailored to each role, from data scientists to compliance
+          officers and auditors, that remain valid as models are retrained and that can be traced and
+          defended during an inspection. They also need explanations generated where sensitive data
+          reside, which small language models make possible without moving data outside the
+          organization. Meeting these needs at scale is what turns XAI narratives from a research
+          result into a compliance product.</p>
+
+          <h4 class="keynote-label">Short Bio</h4>
+
+          <p>Flavio Giorgi is a Postdoctoral Researcher in the Department of Computer Science at
+          Sapienza University of Rome and the Co-Founder, CEO, and CTO of TellmewAI, a
+          Compliant-AI-as-a-Service platform for EU AI Act compliance. He received his PhD in Computer
+          Science from Sapienza and was a visiting PhD student at the Technical University of Munich.
+          His research focuses on Explainable AI, Graph Neural Networks, counterfactual explanations,
+          and Large Language Models.</p>
+        </div>
+
+      </article>
     </div>
   </section>
 
-  <section>
+   <section>
     <div class="container">
-      <p class="program-note">
-        The detailed session-by-session program will be published soon. See the
-        <a href="call-for-papers.html">Call for Papers</a> for submission details in the meantime.
-      </p>
+
+      <div class="section-heading center">
+        <span class="kicker">November 8, 2026</span>
+        <h2>Schedule</h2>
+      </div>
+
+      <div class="schedule-wrap">
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Session</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time">14:10&ndash;14:20</td>
+              <td>Welcome and Opening Remarks</td>
+            </tr>
+            <tr class="highlight">
+              <td class="time">14:20&ndash;15:10</td>
+              <td>
+                <strong>Keynote 1</strong> (including Q&amp;A)
+                <span class="session-detail">Giulia Vilone</span>
+              </td>
+            </tr>
+            <tr class="highlight">
+              <td class="time">15:10&ndash;16:00</td>
+              <td>
+                <strong>Keynote 2</strong> (including Q&amp;A)
+                <span class="session-detail">Flavio Giorgi</span>
+              </td>
+            </tr>
+            <tr class="break">
+              <td class="time">16:00&ndash;16:30</td>
+              <td>Coffee Break</td>
+            </tr>
+            <tr>
+              <td class="time">16:30&ndash;17:15</td>
+              <td>
+                <strong>Paper Presentations</strong>
+                <span class="session-detail">3 papers</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="time">17:15&ndash;17:45</td>
+              <td>
+                <strong>Interactive Roundtable:</strong> Open Challenges and Future Directions in LLM-based XAI
+              </td>
+  
+            </tr>
+            <tr>
+              <td class="time">17:45&ndash;18:00</td>
+              <td>Closing Remarks and Informal Networking</td>
+    
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </section>
 
